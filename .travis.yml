@@ -5,7 +5,7 @@ deploy:
   local_dir: dpl_cd_upload
   skip_cleanup: true
   on: &2
-    repo: organization/SampleApp_CodeDeploy_Travis
+    repo: monzurul/SampleApp_CodeDeploy_Travis
   bucket: code-deploy-application-demo
   region: ap-southeast-1
 - provider: codedeploy
