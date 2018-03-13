@@ -18,7 +18,7 @@ deploy:
   deployment_group: EC2Deploy
   region: ap-southeast-1
   on:
-    branch: master
+    branch: develop
 script:
   - zip -r latest *
   - mkdir -p dpl_cd_upload
