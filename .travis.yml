@@ -17,7 +17,8 @@ deploy:
   application: CodeDeployApplicationDemo
   deployment_group: EC2Deploy
   region: ap-southeast-1
-  on: *2
+  on:
+    branch: master
 script:
   - zip -r latest *
   - mkdir -p dpl_cd_upload
