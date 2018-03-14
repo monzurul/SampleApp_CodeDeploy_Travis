@@ -12,7 +12,7 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   bucket: code-deploy-application-demo
-  key: latest.zip
+  key: latest_master.zip
   bundle_type: zip
   application: CodeDeployApplicationDemo
   deployment_group: EC2Deploy
@@ -20,6 +20,6 @@ deploy:
   on:
     branch: master
 script:
-  - zip -r latest *
+  - zip -r latest_master *
   - mkdir -p dpl_cd_upload
-  - mv latest.zip dpl_cd_upload/latest.zip
+  - mv latest_master.zip dpl_cd_upload/latest_master.zip
